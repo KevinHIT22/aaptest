@@ -1,0 +1,12 @@
+---
+- name: Promote CVs to the next environment
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: user
+      debug:
+        msg: "{{ satellite_user }}"
+    - name: password
+      debug:
+        msg: "{{ satellite_password }}"        
+...
